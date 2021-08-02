@@ -1,6 +1,9 @@
 """
 Download and install sverchok to blender.
 
+Execution Script:
+blender -P install_sverchok.py -b
+
 This module downloads zipped sverchock module
 and installs it.
 """
@@ -19,12 +22,12 @@ def _download_url(url: str, save_path: str, chunk_size=128):
 def _main():
     download_zip_file_path = "/usr/lib/master.zip"
     _download_url(
-        "https://github.com/nortikin/sverchok/archive/master.zip",
+        "https://github.com/nortikin/sverchok/archive/refs/tags/vstable9.zip",
         download_zip_file_path,
     )
 
     bpy.ops.preferences.addon_install(filepath=download_zip_file_path)
-    bpy.ops.preferences.addon_enable(module="sverchok-master")
+    bpy.ops.preferences.addon_enable(module="sverchok-vstable9")
     bpy.ops.wm.save_userpref()
 
 
