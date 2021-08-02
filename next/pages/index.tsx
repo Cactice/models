@@ -27,7 +27,7 @@ const Home = ({ fileNames }) => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Sverchok Models
+          Cactice Models
         </h1>
         <List {...{ fileNames }} />
       </main>
