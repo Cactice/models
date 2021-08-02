@@ -55,8 +55,6 @@ jobs:
   deploy_reregenerated_glb:
     needs: [regenerate-cache]
     runs-on: ubuntu-latest
-    env:
-      NODE_ENV: production
     defaults:
       run:
         working-directory: ./next
@@ -93,6 +91,8 @@ jobs:
         run: |
           rm ./public/glb/.gitignore
           yarn build
+        env:
+          NODE_ENV: production
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
