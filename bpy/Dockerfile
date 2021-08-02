@@ -13,5 +13,6 @@ RUN \
   poetry install --no-dev
 RUN cp -rf /usr/src/app/.venv/lib/* /bin/2.91/python/lib
 
+
 COPY install_sverchok.py ./
 RUN blender -P install_sverchok.py -b
