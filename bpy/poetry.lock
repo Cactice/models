@@ -141,6 +141,14 @@ optional = false
 python-versions = ">=3.7"
 
 [[package]]
+name = "fake-bpy-module-2.93"
+version = "20210701"
+description = "Collection of the fake Blender Python API module for the code completion."
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+
+[[package]]
 name = "flake8"
 version = "3.8.4"
 description = "the modular source code checker: pep8 pyflakes and co"
@@ -658,7 +666,7 @@ testing = ["pytest (>=3.5,!=3.7.3)", "pytest-checkdocs (>=1.2.3)", "pytest-flake
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7"
-content-hash = "f3885f9523d01bba05821aba28dc5e1ca9c0f73463502d5c5b2ae8f88b34b4d1"
+content-hash = "087f32863e7e3197406d48af9ba3e9e281b10b741d5d4c503718f97ddae42b88"
 
 [metadata.files]
 appdirs = [
@@ -713,6 +721,10 @@ eradicate = [
 "fake-bpy-module-2.91" = [
     {file = "fake-bpy-module-2.91-20201216.tar.gz", hash = "sha256:3168d700a68ec238df3bed4c2c26358dc3ddc528e25de8e90cdb1c0977eeabdc"},
     {file = "fake_bpy_module_2.91-20201216-py3-none-any.whl", hash = "sha256:2974bd203d68ef664cf5b7a7e8110e3ff27addee7aa6f822f4a3d2f28ce1c295"},
+]
+"fake-bpy-module-2.93" = [
+    {file = "fake-bpy-module-2.93-20210701.tar.gz", hash = "sha256:20c372c63424ace23422ae9117ab45cfdb3c3f1a8a6550d50926cb3ca3eef999"},
+    {file = "fake_bpy_module_2.93-20210701-py3-none-any.whl", hash = "sha256:565a8094c0c45fa0ff02964943f8a02a4a530d56707fbc70848e4a72a40bbc7d"},
 ]
 flake8 = [
     {file = "flake8-3.8.4-py2.py3-none-any.whl", hash = "sha256:749dbbd6bfd0cf1318af27bf97a14e28e5ff548ef8e5b1566ccfb25a11e7c839"},

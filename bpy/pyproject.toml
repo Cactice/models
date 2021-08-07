@@ -11,13 +11,13 @@ requests = "^2.25.1"
 
 [tool.poetry.dev-dependencies]
 wemake-python-styleguide = "^0.15.1"
-"fake-bpy-module-2.91" = "^20201216"
 flake8 = "^3.8.4"
 black = "^20.8b1"
 mypy = "^0.800"
 isort = "^5.7.0"
 autoflake = "^1.4"
 flake8-print = "^4.0.0"
+"fake-bpy-module-2.93" = "^20210701"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
