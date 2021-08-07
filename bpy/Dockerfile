@@ -1,5 +1,5 @@
 # python 3.7
-FROM nytimes/blender:2.91-cpu-ubuntu18.04 as dev
+FROM nytimes/blender:2.93-cpu-ubuntu18.04 as dev
 RUN apt-get update && apt-get install -y git
 RUN pip install poetry
 ENV PATH="/bin/2.91/python/bin:${PATH}"
